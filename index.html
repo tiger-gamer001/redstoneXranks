@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>فروش رنک‌های Minecraft | RedstoneX</title>
+  <link rel="icon" href="https://th.bing.com/th/id/R.ef593ffbda96b47750ddbca785fd002d?rik=XtGm4RsSrt14gQ&pid=ImgRaw&r=0" type="image/png">
+  <link href="https://cdn.fontcdn.ir/Font/Persian/Vazirmatn/Vazirmatn.css" rel="stylesheet">
+  <style>
+   
+  
+body {
+  cursor: url('https://cdn.custom-cursor.com/db/4800/arrow2733.png') 16 16, auto;
+}
+
+	  
+a,
+button,
+input[type="submit"],
+div[onclick],
+.button-85,
+.buy-button {
+  cursor: url('https://cdn.custom-cursor.com/db/4799/arrow2733.png') 16 16, pointer;
+}
+       .button-85 {
+    cursor: url('https://cdn.custom-cursor.com/db/4799/arrow2733.png') 16 16, pointer !important;
+  }
+
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  display: block;
+  margin: 0 auto;
+
+	  
+	  
+	  }
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+	
+@import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans');
+
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 9999;
+}
+
+.loading-text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+}
+
+.loading-text span {
+  display: inline-block;
+  margin: 0 5px;
+  color: #fff;
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+
+.loading-text span:nth-child(1) {
+  filter: blur(0px);
+  animation: blur-text 1.5s 0s infinite linear alternate;
+}
+.loading-text span:nth-child(2) {
+  filter: blur(0px);
+  animation: blur-text 1.5s 0.2s infinite linear alternate;
+}
+.loading-text span:nth-child(3) {
+  filter: blur(0px);
+  animation: blur-text 1.5s 0.4s infinite linear alternate;
+}
+.loading-text span:nth-child(4) {
+  filter: blur(0px);
+  animation: blur-text 1.5s 0.6s infinite linear alternate;
+}
+.loading-text span:nth-child(5) {
+  filter: blur(0px);
+  animation: blur-text 1.5s 0.8s infinite linear alternate;
+}
+.loading-text span:nth-child(6) {
+  filter: blur(0px);
+  animation: blur-text 1.5s 1s infinite linear alternate;
+}
+.loading-text span:nth-child(7) {
+  filter: blur(0px);
+  animation: blur-text 1.5s 1.2s infinite linear alternate;
+}
+
+@keyframes blur-text {
+  0% { filter: blur(0px); }
+  100% { filter: blur(4px); }
+}
+
+
+
+	  
+	  body {
+      margin: 0;
+      font-family: "Vazirmatn", sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      direction: rtl;
+      min-height: 100vh;
+      scroll-behavior: smooth;
+    }
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 1.5rem;
+      background: linear-gradient(to right, #b30000, #ff4d4d);
+      border-bottom: 2px solid #ff9999;
+    }
+    header img {
+      width: 40px;
+      height: 40px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
+    .ranks {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .rank {
+      padding: 1.5rem;
+      border-radius: 20px;
+      backdrop-filter: blur(5px);
+      box-shadow: 0 0 20px rgba(255,255,255,0.1);
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    .rank:hover {
+      transform: scale(1.03);
+    }
+    .rank h2 {
+      margin-top: 0;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 1.5rem;
+    }
+    .rank h2 img {
+      width: 24px;
+      height: 24px;
+    }
+    .leather { background: linear-gradient(135deg, rgba(139,69,19,0.5), rgba(160,82,45,0.5)); border: 1px solid #8b4513; }
+    .iron { background: linear-gradient(135deg, rgba(192,192,192,0.4), rgba(169,169,169,0.4)); border: 1px solid #c0c0c0; }
+    .gold { background: linear-gradient(135deg, rgba(255,215,0,0.4), rgba(238,201,0,0.4)); border: 1px solid #ffd700; }
+    .diamond { background: linear-gradient(135deg, rgba(0,191,255,0.4), rgba(30,144,255,0.4)); border: 1px solid #00bfff; }
+    .netherite { background: linear-gradient(135deg, rgba(72,61,139,0.4), rgba(54,39,96,0.4)); border: 1px solid #483d8b; }
+
+    .details {
+      margin-top: 1rem;
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: max-height 0.6s ease, opacity 0.4s ease;
+    }
+    .details.active {
+      max-height: 500px;
+      opacity: 1;
+    }
+
+    .buy-button {
+      margin-top: 1rem;
+      background-color: #ff3333;
+      color: white;
+      border: none;
+      padding: 0.7rem 1.2rem;
+      border-radius: 12px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: transform 0.3s ease;
+    }
+    .buy-button:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #222;
+      border-top: 1px solid #333;
+      font-size: 0.9rem;
+    }
+    footer a {
+      color: #ff4d4d;
+      text-decoration: none;
+    }
+	   body {
+      margin: 0;
+      font-family: "Vazirmatn", sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      direction: rtl;
+      min-height: 100vh;
+      scroll-behavior: smooth;
+    }
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 1.5rem;
+      background: linear-gradient(to right, #b30000, #ff4d4d);
+      border-bottom: 2px solid #ff9999;
+    }
+    header img {
+      width: 40px;
+      height: 40px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
+    .ranks {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .rank {
+      padding: 1.5rem;
+      border-radius: 20px;
+      backdrop-filter: blur(5px);
+      box-shadow: 0 0 20px rgba(255,255,255,0.1);
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    .rank:hover {
+      transform: scale(1.03);
+    }
+    .rank h2 {
+      margin-top: 0;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 1.5rem;
+    }
+    .rank h2 img {
+      width: 24px;
+      height: 24px;
+    }
+    .leather { background: linear-gradient(135deg, rgba(139,69,19,0.5), rgba(160,82,45,0.5)); border: 1px solid #8b4513; }
+    .iron { background: linear-gradient(135deg, rgba(192,192,192,0.4), rgba(169,169,169,0.4)); border: 1px solid #c0c0c0; }
+    .gold { background: linear-gradient(135deg, rgba(255,215,0,0.4), rgba(238,201,0,0.4)); border: 1px solid #ffd700; }
+    .diamond { background: linear-gradient(135deg, rgba(0,191,255,0.4), rgba(30,144,255,0.4)); border: 1px solid #00bfff; }
+    .netherite { background: linear-gradient(135deg, rgba(72,61,139,0.4), rgba(54,39,96,0.4)); border: 1px solid #483d8b; }
+
+    .details {
+      margin-top: 1rem;
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: max-height 0.6s ease, opacity 0.4s ease;
+    }
+    .details.active {
+      max-height: 500px;
+      opacity: 1;
+    }
+
+    .buy-button {
+      margin-top: 1rem;
+      background-color: #ff3333;
+      color: white;
+      border: none;
+      padding: 0.7rem 1.2rem;
+      border-radius: 12px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: transform 0.3s ease;
+    }
+    .buy-button:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #222;
+      border-top: 1px solid #333;
+      font-size: 0.9rem;
+    }
+    footer a {
+      color: #ff4d4d;
+      text-decoration: none;
+    }
+    .about {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 1.5rem;
+      background: rgba(255,255,255,0.05);
+      border-radius: 20px;
+      line-height: 2;
+    }
+    .about h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      text-align: center;
+      color: #ff9999;
+    }
+	  
+	footer {
+  background-image: url('https://i.imgur.com/wTr8ksb.png');
+  background-position: center ;
+  background-size: cover;
+		color: yellow;
+		text-shadow:
+			-1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+}
+
+	  .loading.fade-out {
+  opacity: 0;
+  transition: opacity 0.8s ease;
+  pointer-events: none;
+}
+
+	  
+  </style>
+</head>
+<body>
+	<div class="loading" style="color: #FF2629">
+  <div class="loading-text">
+    <span style="color: #FF2629">رد</span>
+    <span style="color: #FF2629">استون</span>
+    <span style="color: #FF2629">ایکس</span>
+    <span style="color: #FF2629">|</span>
+    <span style="color: #FF2629">X</span>
+    <span style="color: #FF2629">stone</span>
+    <span style="color: #FF2629">Red</span>
+  </div>
+</div>
+
+  <header>
+    <img src="https://th.bing.com/th/id/R.ef593ffbda96b47750ddbca785fd002d?rik=XtGm4RsSrt14gQ&pid=ImgRaw&r=0" alt="Redstone">
+    <h1>فروش رنک‌های Minecraft | RedstoneX</h1>
+  </header>
+	
+
+<section class="about">
+   
+    <p align="center"><img src="https://www.pngkit.com/png/full/16-168622_minecraft-heart-png-8-bits-heart.png" height="15px">با خرید رنک از تیم ما حمایت میکنی و در عوض کلی امکانات ویژه میگیری<img src="https://www.pngkit.com/png/full/16-168622_minecraft-heart-png-8-bits-heart.png" height="15px"></p>
+  </section>
+  <section class="ranks">
+    
+
+    <div class="rank iron" onclick="toggleDetails(this)">
+      <h2><img src="https://static.miraheze.org/minecraftjapanwiki/0/0a/Iron_Ingot.png?20210423122317" alt="آهن">رنک آهنی</h2>
+      <div class="details">
+        <ul>
+          <li>یک ست دایمندی</li>
+          <li>1000 عدد کلیم بلاک</li>
+          <li>قیمت: 40 هزار تومان</li>
+        </ul>
+        
+      </div>
+    </div>
+
+    <div class="rank gold" onclick="toggleDetails(this)">
+      <h2><img src="https://static.miraheze.org/minecraftjapanwiki/2/22/Gold_Ingot.png" alt="طلایی">رنک طلایی</h2>
+      <div class="details">
+        <ul>
+          <li>دسترسی به /craft</li>
+          <li>ست دایمند نیمه اینچنت</li>
+          <li>3000 کلیم بلاک</li>
+          <li>قیمت: 80 هزار تومان</li>
+        </ul>
+        
+      </div>
+    </div>
+
+    <div class="rank diamond" onclick="toggleDetails(this)">
+      <h2><img src="https://static.miraheze.org/minecraftjapanwiki/e/ea/Diamond.png" alt="دایمندی">رنک دایمندی</h2>
+      <div class="details">
+        <ul>
+          <li>دسترسی به اندر چست کرفتینگ تیبل و انویل با کد های /anvil , /crafting , /ec</li>
+          <li>ست فول ندرایت نیمه اینچنت</li>
+          <li>5000 کلیم بلاک</li>
+          <li>قیمت: 100 هزار تومان</li>
+        </ul>
+      
+      </div>
+    </div>
+
+    <div class="rank netherite" onclick="toggleDetails(this)">
+      <h2><img src="https://static.miraheze.org/minecraftjapanwiki/f/fb/Netherite_Ingot.png" alt="ندرایتی">رنک اسپانسر</h2>
+      <div class="details">
+        <ul>
+          <li>قابلیت پرواز (/fly)</li>
+          <li>دسترسی به اندرچست، کرفتینگ تیبل، انویل، تعمیر وسایل</li>
+          <li>یک ست کامل فول ندرایت فول اینچنت</li>
+             <li>10 هزار کلیم بلاک</li>
+          <li>قیمت: 150 هزار تومان</li>
+        </ul>
+      
+      </div>
+    </div>
+  </section>
+
+	
+	
+<button class="button-85" role="button" onClick="window.open('https://t.me/RedatoneX_AD', '_blank')"><b>خرید</b></button>
+
+
+
+	<br>
+
+ <footer>
+  <p style="background-color: red; max-width: 90%; padding: 12px 16px; margin: 20px auto; opacity: 0.8; border-radius: 12px; display: flex; align-items: center; justify-content: center; text-align: center; line-height: 1.6;">
+    <b>
+      برای خرید هر رنک، یوزرنیم خود را به همراه نام رنک مورد نظر به آیدی تلگرام 
+      <a href="https://t.me/RedatoneX_AD" style="color: white; margin-right: 5px;">@RedatoneX_AD</a> بفرستید.
+    </b>
+  </p>
+</footer>
+
+
+
+
+	<script>
+  window.addEventListener("load", function () {
+    document.querySelector(".loading").style.display = "none";
+  });
+</script>
+
+  <script>
+    function toggleDetails(card) {
+      const details = card.querySelector('.details');
+      details.classList.toggle('active');
+    }
+
+    function buy(event) {
+      event.stopPropagation();
+      alert('برای خرید، لطفاً به آیدی تلگرام @RedatoneX_AD پیام دهید.');
+    }
+	  
+  </script>
+	<script>
+  function hideLoader() {
+    const loader = document.querySelector(".loading");
+    if (loader) {
+      loader.classList.add("fade-out");
+      setTimeout(() => loader.style.display = "none", 800); 
+    }
+  }
+
+  window.addEventListener("load", hideLoader);
+
+  setTimeout(hideLoader, 3000);
+</script>
+<br>
+ <section class="about">
+    <h2>درباره تیم RedstoneX</h2>
+    <p>تیم RedstoneX یک گروه ،خلاق و متعهد از علاقه‌مندان به دنیای Minecraft است که با هدف ایجاد تجربه‌ای متفاوت و حرفه‌ای برای بازیکنان فارسی‌زبان شکل گرفته. ما با تمرکز بر کیفیت تلاش می‌کنیم تا فضای سروری پویا و منظم فراهم کنیم؛ جایی که همه از تازه‌واردها تا پلیرهای حرفه‌ای بتونن از بازی لذت ببرن. ، RedstoneX همیشه در تلاشه تا استاندارد جدیدی در بین سرورهای ماینکرفت فارسی تعریف کنه. افتخار ما اینه که بخشی از جامعه‌ای پرشور و رو به رشدی هستیم که عشق به خلاقیت و همکاری، نقطه مشترک همه اعضاشه.</p>
+  </section>
+</body>
+</html>
