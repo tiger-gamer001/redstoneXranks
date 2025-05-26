@@ -25,6 +25,25 @@ div[onclick],
        .button-85 {
     cursor: url('https://cdn.custom-cursor.com/db/4799/arrow2733.png') 16 16, pointer !important;
   }
+      .claimshop-btn {
+             cursor: url('https://cdn.custom-cursor.com/db/4799/arrow2733.png') 16 16, pointer !important; 
+      }
+
+      .spantorch {
+            cursor: url('https://cdn.custom-cursor.com/db/4799/arrow2733.png') 16 16, pointer !important;
+      }
+
+      
+      .torch21{
+           cursor: url('https://cdn.custom-cursor.com/db/4799/arrow2733.png') 16 16, pointer !important;
+          
+      }
+.claimshop-linkbtn:hover {
+  background: rgba(255, 120, 0, 0.4);
+  box-shadow: 0 0 15px rgba(255,120,0,0.6);
+  transform: scale(1.05);
+}
+
 
 .button-85 {
   padding: 0.6em 2em;
@@ -167,6 +186,18 @@ div[onclick],
 
 
 
+@keyframes floatUpDown {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+
+.floating {
+  animation: floatUpDown 3s ease-in-out infinite;
+  vertical-align: middle; 
+  margin-top: 10px;
+}
+
 	  
 	  body {
       margin: 0;
@@ -199,7 +230,7 @@ div[onclick],
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 1.5rem;
       padding: 2rem;
-      max-width: 1200px;
+      max-width: 1400px;
       margin: auto;
     }
     .rank {
@@ -369,6 +400,7 @@ div[onclick],
     .about {
       max-width: 900px;
       margin: 3rem auto;
+      max-width: 1200px;
       padding: 1.5rem;
       background: rgba(255,255,255,0.05);
       border-radius: 20px;
@@ -399,7 +431,111 @@ div[onclick],
   pointer-events: none;
 }
 
-	  
+	  .claimshop-container {
+      backdrop-filter: blur(12px);
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+      padding: 10px;
+      max-width: 1200px;
+      margin: auto;
+      color: white;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      height: calc(100% - 100px);
+      }
+
+    .claimshop-container h3 {
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 24px;
+    }
+
+    .claimshop-items {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .claimshop-item {
+  background: rgba(0, 255, 150, 0.2);  
+  border: 1px solid rgba(0, 255, 150, 0.5);
+  padding: 20px;
+  border-radius: 16px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  position: relative;
+  overflow: hidden;
+  padding: 10px        ;
+}
+
+    .claimshop-item:hover {
+  background: rgba(0, 255, 150, 0.4);
+  box-shadow: 0 0 20px 4px rgba(0, 255, 150, 0.3);
+  transform: scale(1.03);
+}
+
+    .claimshop-item span:first-of-type {
+      font-size: 18px;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+   
+    .claimshop-item span:last-of-type,
+    .claimshop-btn {
+      opacity: 0;
+      transform: translateY(10px);
+      transition: all 0.4s ease;
+      pointer-events: none;
+    }
+
+    .claimshop-item:hover span:last-of-type,
+    .claimshop-item:hover .claimshop-btn {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+
+    .claimshop-btn {
+      background: rgba(0, 255, 150, 0.2);
+      color: white;
+      border: 1px solid rgba(0,255,150,0.5);
+      padding: 8px 16px;
+      border-radius: 10px;
+      cursor: pointer;
+      backdrop-filter: blur(2px);
+      font-size: 15px;
+      margin-top: 8px;
+    }
+
+    .claimshop-btn:hover {
+      background: rgba(0, 255, 150, 0.4);
+      box-shadow: 0 0 15px rgba(0,255,150,0.6);
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+      .claimshop-items {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 500px) {
+      .claimshop-items {
+        grid-template-columns: 1fr;
+      }
+    }
+      
+     
+
+
+
+
+  .hidden {
+    display: none !important;
+  }
+
   </style>
 </head>
 <body>
@@ -423,13 +559,13 @@ div[onclick],
 
 <section class="about">
    
-    <p align="center"><img src="https://www.pngkit.com/png/full/16-168622_minecraft-heart-png-8-bits-heart.png" height="15px">با خرید رنک از تیم ما حمایت میکنی و در عوض کلی امکانات ویژه میگیری<img src="https://www.pngkit.com/png/full/16-168622_minecraft-heart-png-8-bits-heart.png" height="15px"></p>
+    <p align="center"><img alt="error" src="https://www.pngkit.com/png/full/16-168622_minecraft-heart-png-8-bits-heart.png" height="15px">با خرید رنک از تیم ما حمایت میکنی و در عوض کلی امکانات ویژه میگیری<img alt="error" src="https://www.pngkit.com/png/full/16-168622_minecraft-heart-png-8-bits-heart.png" height="15px"></p>
   </section>
   <section class="ranks">
     
 
     <div class="rank iron" onclick="toggleDetails(this)">
-      <h2><img src="https://static.miraheze.org/minecraftjapanwiki/0/0a/Iron_Ingot.png?20210423122317" alt="آهن">رنک آهنی</h2>
+      <h2><img class="floating" src="https://static.miraheze.org/minecraftjapanwiki/0/0a/Iron_Ingot.png?20210423122317" alt="آهن">رنک آهنی</h2>
       <div class="details">
         <ul>
           <li>یک ست دایمندی</li>
@@ -441,7 +577,7 @@ div[onclick],
     </div>
 
     <div class="rank gold" onclick="toggleDetails(this)">
-      <h2><img src="https://static.miraheze.org/minecraftjapanwiki/2/22/Gold_Ingot.png" alt="طلایی">رنک طلایی</h2>
+      <h2><img class="floating" src="https://static.miraheze.org/minecraftjapanwiki/2/22/Gold_Ingot.png" alt="طلایی">رنک طلایی</h2>
       <div class="details">
         <ul>
           <li>دسترسی به /craft</li>
@@ -454,7 +590,7 @@ div[onclick],
     </div>
 
     <div class="rank diamond" onclick="toggleDetails(this)">
-      <h2><img src="https://static.miraheze.org/minecraftjapanwiki/e/ea/Diamond.png" alt="دایمندی">رنک دایمندی</h2>
+      <h2><img class="floating" src="https://static.miraheze.org/minecraftjapanwiki/e/ea/Diamond.png" alt="دایمندی">رنک دایمندی</h2>
       <div class="details">
         <ul>
           <li>دسترسی به اندر چست کرفتینگ تیبل و انویل با کد های /anvil , /crafting , /ec</li>
@@ -467,7 +603,7 @@ div[onclick],
     </div>
 
     <div class="rank netherite" onclick="toggleDetails(this)">
-      <h2><img src="https://static.miraheze.org/minecraftjapanwiki/f/fb/Netherite_Ingot.png" alt="ندرایتی">رنک اسپانسر</h2>
+      <h2><img class="floating" src="https://static.miraheze.org/minecraftjapanwiki/f/fb/Netherite_Ingot.png" alt="ندرایتی">رنک اسپانسر</h2>
       <div class="details">
         <ul>
           <li>قابلیت پرواز (/fly)</li>
@@ -479,18 +615,76 @@ div[onclick],
       
       </div>
     </div>
+      
   </section>
 
-	
-	
-<button class="button-85" role="button" onClick="window.open('https://t.me/RedatoneX_AD', '_blank')"><b>خرید</b></button>
+	<div class="claimshop-container">
+  <h3 class="torch21" onclick="toggleClaimShop()">🛒 تعرفه فروش بلاک کلیم
+    <img alt="error" src="https://i.postimg.cc/sXc74Qgh/Background-Eraser.png" width="70px" style="margin-left: 0px; transform: translateY(20px);">
+  </h3><br><p align="center" style="transform: translateY(-60px)">(کلیک کنید)</p>
+
+  <div class="claimshop-items hidden" id="claimshopContent">
+    <div class="claimshop-item">
+      <span>500 Claim Block</span>
+      <span>10 هزار تومان</span>
+      <button class="claimshop-btn" onclick="window.open('https://t.me/RedatoneX_AD', '_blank')">خرید</button>
+    </div>
+    <div class="claimshop-item">
+      <span>1K Claim Block</span>
+      <span>18 هزار تومان</span>
+      <button class="claimshop-btn" onclick="window.open('https://t.me/RedatoneX_AD', '_blank')">خرید</button>
+    </div>
+    <div class="claimshop-item">
+      <span>2K Claim Block</span>
+      <span>30 هزار تومان</span>
+      <button class="claimshop-btn" onclick="window.open('https://t.me/RedatoneX_AD', '_blank')">خرید</button>
+    </div>
+    <div class="claimshop-item">
+      <span>5K Claim Block</span>
+      <span>60 هزار تومان</span>
+      <button class="claimshop-btn" onclick="window.open('https://t.me/RedatoneX_AD', '_blank')">خرید</button>
+    </div>
+    <div class="claimshop-item">
+      <span>10K Claim Block</span>
+      <span>100 هزار تومان</span>
+      <button class="claimshop-btn" onclick="window.open('https://t.me/RedatoneX_AD', '_blank')">خرید</button>
+    </div>
+    <div class="claimshop-item">
+      <span>20K Claim Block</span>
+      <span class="spantorch">190 هزار تومان</span>
+      <button class="claimshop-btn" onclick="window.open('https://t.me/RedatoneX_AD', '_blank')">خرید</button>
+    </div>
+  </div>
+</div>
+
+
+ 
+ <script>
+  function toggleClaimShop() {
+    const content = document.getElementById('claimshopContent');
+    content.classList.toggle('hidden');
+  }
+</script>
+
+<script>
+  function toggleClaimShop() {
+    const content = document.getElementById('claimshopContent');
+    content.classList.toggle('hidden');
+  }
+</script>
+
+
+<br>
+    
+    
+<button class="button-85" role="button" onClick="window.open('https://t.me/RedatoneX_AD', '_blank')" style="width: 200px; height: 80px; font-size: 30px"><b>خرید</b></button>
 
 
 
 	<br>
 
  <footer>
-  <p style="background-color: red; max-width: 90%; padding: 12px 16px; margin: 20px auto; opacity: 0.8; border-radius: 12px; display: flex; align-items: center; justify-content: center; text-align: center; line-height: 1.6;">
+  <p style="background-color: red; max-width: 1200px; padding: 12px 16px; margin: 20px auto; opacity: 0.8; border-radius: 12px; display: flex; align-items: center; justify-content: center; text-align: center; line-height: 1.6;">
     <b>
       برای خرید هر رنک، یوزرنیم خود را به همراه نام رنک مورد نظر به آیدی تلگرام 
       <a href="https://t.me/RedatoneX_AD" style="color: white; margin-right: 5px;">@RedatoneX_AD</a> بفرستید.
@@ -534,8 +728,8 @@ div[onclick],
 </script>
 <br>
  <section class="about">
-    <h2>درباره تیم RedstoneX</h2>
-    <p>تیم RedstoneX یک گروه ،خلاق و متعهد از علاقه‌مندان به دنیای Minecraft است که با هدف ایجاد تجربه‌ای متفاوت و حرفه‌ای برای بازیکنان فارسی‌زبان شکل گرفته. ما با تمرکز بر کیفیت تلاش می‌کنیم تا فضای سروری پویا و منظم فراهم کنیم؛ جایی که همه از تازه‌واردها تا پلیرهای حرفه‌ای بتونن از بازی لذت ببرن. ، RedstoneX همیشه در تلاشه تا استاندارد جدیدی در بین سرورهای ماینکرفت فارسی تعریف کنه. افتخار ما اینه که بخشی از جامعه‌ای پرشور و رو به رشدی هستیم که عشق به خلاقیت و همکاری، نقطه مشترک همه اعضاشه.</p>
+    <h2 style="margin-left: 50px"><img alt="error" src="https://i.postimg.cc/J0911TB5/Background-Eraser.png" width="90px" style="margin-left: 0px; transform: translateY(20px);">درباره تیم RedstoneX</h2>
+    <p style="text-align: center">تیم RedstoneX یک گروه خلاق و متعهد از علاقه‌مندان به دنیای Minecraft است که با هدف ایجاد تجربه‌ای متفاوت و حرفه‌ای برای بازیکنان فارسی‌زبان شکل گرفته است. ما با تمرکز بر کیفیت تلاش می‌کنیم تا فضای سروری پویا و منظم فراهم کنیم؛ جایی که همه از تازه‌واردها تا پلیرهای حرفه‌ای بتونن از بازی لذت ببرن. ، RedstoneX همیشه در تلاشه تا استاندارد جدیدی در بین سرورهای ماینکرفت فارسی تعریف کنه. افتخار ما اینه که بخشی از جامعه‌ای پرشور و رو به رشدی هستیم که عشق به خلاقیت و همکاری، نقطه مشترک همه اعضاشه.</p>
   </section>
 </body>
 </html>
